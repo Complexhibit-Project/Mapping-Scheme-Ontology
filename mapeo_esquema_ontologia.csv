@@ -1,0 +1,21 @@
+elemento_manual,atributo,correspondencia,vocabulario,nota
+exhibition,,ox:Exhibition,OntoExhibit,"Exposición: ox:hasTitle, ox:hasTimeSpan, ox:hasVenue, ox:takesPlaceAt, ox:displays"
+exhibition,ref (current / past / itinerant),ox:Exhibition,OntoExhibit,La exposición actual es la principal del catálogo
+title,,ox:hasTitle,OntoExhibit,Título de exposición u obra
+person / persName,,ox:E21_Person,OntoExhibit,
+person,role,ox:hasRole → clase de rol,OntoExhibit,Ver tabla de roles de persona
+institution,,ox:Institution,OntoExhibit,Ver tabla de tipos de institución
+institution,role,"ox:hasOrganizer, ox:hasLender, ox:hasVenue…",OntoExhibit,Ver tabla de roles de institución
+venue,,ox:hasVenue,OntoExhibit,Sede de la exposición
+placeName,,ox:Territorial_Entity,OntoExhibit,Lugar
+address,,ox:Physical_Site + ox:address,OntoExhibit,Dirección
+date,when,ox:Exact_Date,OntoExhibit,Fecha única
+date,from / to,ox:Time_Range + ox:hasStartingDate / ox:hasEndingDate,OntoExhibit,Intervalo
+catalogueItem / work,,ox:Artwork,OntoExhibit,Obra
+catalogueItem / work,creador,"ox:hasCreation → ox:E65_Creation (ox:hasCreator, ox:hasTimeSpan)",OntoExhibit,Creación de la obra
+work,type,crm:P2_has_type → crm:E55_Type,CIDOC-CRM,Tipo de obra
+technique,,crm:P32_used_general_technique → crm:E55_Type,CIDOC-CRM,Técnica
+material,,crm:P45_consists_of → crm:E57_Material,CIDOC-CRM,Material
+dimensions,"height, width, depth, diameter, weight; unit","crm:P43_has_dimension → crm:E54_Dimension (P2 tipo, P90 valor, P91 unidad)",CIDOC-CRM,Dimensiones desglosadas
+idno,,crm:P1_is_identified_by → crm:E42_Identifier,CIDOC-CRM,Número de inventario o de catálogo
+(catálogo),,ox:Catalog + crm:P67_refers_to,OntoExhibit / CIDOC-CRM,El catálogo remite a cada entidad mencionada
