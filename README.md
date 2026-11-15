@@ -81,7 +81,7 @@ CIDOC-CRM.
 
 Aplicado a los 100 catálogos del gold standard, el esquema produce un grafo de **108.996
 tripletas** que describen 2.754 obras, 1.757 personas, 376 exposiciones y 527 instituciones. El
-grafo se publica en Zenodo junto con las anotaciones: [DOI].
+grafo se publica en Zenodo junto con las anotaciones: https://doi.org/10.5281/zenodo.24199594
 
 ## Uso
 
@@ -89,20 +89,21 @@ El esquema se aplica con el sistema de extracción del proyecto, en
 [Automatic-Tagged-System](https://github.com/Complexhibit-Project/Automatic-Tagged-System), que
 convierte en RDF tanto el gold standard anotado en GATE como la salida del etiquetado automático de
 catálogos nuevos. Allí está también el
-[manual de etiquetado](https://github.com/Complexhibit-Project/Automatic-Tagged-System/tree/main/docs),
+[manual de etiquetado](https://doi.org/10.5281/zenodo.24242023),
 que define los elementos y atributos de la columna izquierda de las tablas.
 
-## Desarrollo y autoría
+## Autoría
 
-La herramienta se ha desarrollado a partir de una metodología de etiquetado de textos diseñada específicamente en el marco del proyecto, que incluye una guía de anotación y un esquema de categorías propio. El equipo investigador ha realizado el etiquetado manual de los textos que constituyen la base de entrenamiento de la herramienta, permitiendo automatizar el etiquetado de nuevos textos conforme a los criterios establecidos. El código se ha generado con asistencia de inteligencia artificial (Claude, de Anthropic), a partir de las especificaciones y directrices proporcionadas por el equipo investigador.
+- **Dirección y diseño del esquema de correspondencias:** M.ª Luisa Díez Platas (Universidad Internacional de La Rioja, UNIR).
+- **Guía de anotación y esquema de categorías de partida:** María Ortiz Tello y M.ª Luisa Díez Platas.
+- **Ontología de destino:** OntoExhibit, desarrollada en el proyecto Complexhibit, ampliada con CIDOC-CRM.
 
-- **Diseño del sistema y de su evaluación, y dirección del desarrollo:** M.ª Luisa Díez Platas (Universidad Internacional de La Rioja, UNIR).
-- **Guía de anotación y esquema de categorías:** María Ortiz Tello y M.ª Luisa Díez Platas.
-- **Validación:** el esquema se ha aplicado a los 100 catálogos del gold standard y el grafo resultante se ha comprobado con las cifras de obras, personas, exposiciones e instituciones indicadas arriba.
+El código que aplica el esquema, y la declaración sobre su desarrollo, están en
+[Automatic-Tagged-System](https://github.com/Complexhibit-Project/Automatic-Tagged-System).
 
 ## Cómo citar
 
-Rodríguez Ortega, N., Díez Platas, M. L. Ortiz Tello, M. (2026). *Mapping-Scheme-Ontology: correspondencias entre el esquema de etiquetado de catálogos y OntoExhibit*. Proyecto Complexhibit. https://github.com/Complexhibit-Project/Mapping-Scheme-Ontology
+Díez Platas, M. L. y Ortiz Tello, M. (2026). *Mapping-Scheme-Ontology: correspondencias entre el esquema de etiquetado de catálogos y OntoExhibit*. Proyecto Complexhibit. https://github.com/Complexhibit-Project/Mapping-Scheme-Ontology
 
 ## Licencia
 
@@ -110,6 +111,5 @@ Esquema de correspondencias y documentación: CC BY 4.0.
 
 ## Financiación
 
-Proyecto Complexhibit (PID2021-125037NB-I00), financiado por MCIN/AEI/10.13039/501100011033 y
-por FEDER, Una manera de hacer Europa. Universidad Internacional de La Rioja (UNIR) y
+Proyecto PID2021-125037NB-I00, «Estudio e interpretación del dominio de las exposiciones artísticas como sistema cultural complejo mediante analítica de datos y procesamiento del lenguaje natural» (Complexhibit), financiado por MCIN/AEI/10.13039/501100011033. Universidad Internacional de La Rioja (UNIR) y
 Universidad de Málaga (UMA).
